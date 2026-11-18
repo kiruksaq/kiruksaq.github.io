@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEBCRAFT21 — Разработка сайтов и парсеров под ключ от 1 дня</title>
+  <meta name="description" content="Сайты для бизнеса и парсеры баз под ключ от 1 дня. Бесплатный прототип за 24 часа, 0 ₽ за хостинг, заявки в ВК и MAX.">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#09090b">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta property="og:title" content="WEBCRAFT21 — Сайты и парсеры под ключ от 1 дня">
+  <meta property="og:description" content="Бесплатный рабочий прототип за 24 часа. Оплата после проверки.">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-box">
+      <div class="loader-logo">webcraft21<span>.ru</span></div>
+      <div class="loader-track"><div class="loader-bar"></div></div>
+      <div class="loader-status" id="loader-status">Инициализация...</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">webcraft21<span>.ru</span></a>
+      <nav class="nav" id="main-nav">
+        <a href="#benefits">Преимущества</a>
+        <a href="#services">Услуги</a>
+        <a href="#cases">Работы</a>
+        <a href="#workflow">Этапы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#contact" class="btn-outline">Обсудить задачу</a>
+        <button type="button" class="burger-btn" id="burger-btn" aria-label="Меню" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="badge">Бесплатный прототип за 24 часа</span>
+        <h1>Сайты для бизнеса и парсеры баз <span>под ключ от 1 дня</span></h1>
+        <p class="hero-sub">Без ежемесячной платы за хостинг. Настрою приём заявок прямо в личные сообщения ВКонтакте, мессенджер MAX или на почту. Оплата только после проверки готового сайта.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Получить бесплатный прототип</a>
+          <a href="#cases" class="btn-ghost">Примеры работ</a>
+        </div>
+      </div>
+
+      <div class="calc-box reveal">
+        <h3>Расчёт стоимости</h3>
+        <p class="calc-hint">Выберите нужные опции:</p>
+        <label class="calc-item">
+          <input type="checkbox" class="calc-checkbox" data-price="3500" data-name="Сайт-визитка">
+          <span>Сайт-визитка <strong>+3 500 ₽</strong></span>
+        </label>
+        <label class="calc-item">
+          <input type="checkbox" class="calc-checkbox" data-price="500" data-name="Заявки в ВК/MAX">
+          <span>Подключить заявки в ВК/MAX <strong>+500 ₽</strong></span>
+        </label>
+        <label class="calc-item">
+          <input type="checkbox" class="calc-checkbox" data-price="1500" data-name="Парсер базы">
+          <span>Сделать парсер базы <strong>+1 500 ₽</strong></span>
+        </label>
+        <div class="calc-footer">
+          <div class="calc-sum">Итого: <strong id="calc-total">0 ₽</strong></div>
+          <button type="button" id="calc-apply-btn" class="btn-secondary">В заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="benefits">
+    <div class="container">
+      <h2 class="section-title reveal">Принципы работы</h2>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Сначала результат</h3>
+          <p>Собираю рабочий прототип под вашу нишу за 1 день бесплатно. Вы оцениваете готовый макет до внесения оплаты.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>0 ₽ за хостинг</h3>
+          <p>Размещаю проект на облачном хостинге без абонентской платы. По желанию оплачивается только домен .ru (~200 ₽/год).</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </div>
+          <h3>Заявки в ВК и MAX</h3>
+          <p>Клиент отправляет форму на сайте — уведомление моментально приходит вам в личные сообщения или на электронную почту.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Услуги и тарифы</h2>
+      <div class="grid-3">
+        <div class="card price-card reveal">
+          <h3>Сайт-визитка</h3>
+          <div class="price">3 500 ₽</div>
+          <ul class="feature-list">
+            <li>Продающий одностраничник</li>
+            <li>Адаптация под мобильные устройства</li>
+            <li>Кнопки связи с ВК / MAX</li>
+            <li>Срок запуска: от 1 дня</li>
+          </ul>
+          <button type="button" class="btn-outline full-width select-service-btn" data-service="Сайт-визитка">Выбрать</button>
+        </div>
+
+        <div class="card price-card featured reveal">
+          <span class="popular-tag">Оптимально</span>
+          <h3>Сайт + заявки в ВК/MAX</h3>
+          <div class="price">4 000 ₽</div>
+          <ul class="feature-list">
+            <li>Всё из тарифа «Сайт-визитка»</li>
+            <li>Форма заказа с защитой от спама</li>
+            <li>Мгновенная отправка заявок в ВК/почту</li>
+            <li>30 дней бесплатных правок</li>
+          </ul>
+          <button type="button" class="btn-primary full-width select-service-btn" data-service="Сайт + заявки в ВК/MAX">Выбрать</button>
+        </div>
+
+        <div class="card price-card reveal">
+          <h3>Парсер базы клиентов</h3>
+          <div class="price">1 500 ₽</div>
+          <ul class="feature-list">
+            <li>Сбор целевой аудитории из открытых источников</li>
+            <li>Фильтрация по городам и активности</li>
+            <li>Выгрузка в таблицу Excel / CSV</li>
+            <li>Готовая база за несколько часов</li>
+          </ul>
+          <button type="button" class="btn-outline full-width select-service-btn" data-service="Парсер базы">Выбрать</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cases">
+    <div class="container">
+      <h2 class="section-title reveal">Реализованные проекты</h2>
+      <div class="grid-3">
+        <div class="card case-card reveal" data-case="0">
+          <div class="case-top"><span class="case-badge">Автосервис · 1 день</span><span class="case-open">Смотреть кейс ↗</span></div>
+          <h3>Лендинг для детейлинг-студии</h3>
+          <p>Прайс-лист, блок «До/После» и форма записи на полировку с уведомлениями мастеру в ВК.</p>
+          <div class="case-tags"><span>HTML5</span><span>CSS Grid</span><span>Web3Forms</span></div>
+        </div>
+        <div class="card case-card reveal" data-case="1">
+          <div class="case-top"><span class="case-badge">Бьюти-сфера · 1 день</span><span class="case-open">Смотреть кейс ↗</span></div>
+          <h3>Сайт-визитка мастера маникюра</h3>
+          <p>Адаптивный одностраничник для трафика из ВКонтакте с галереей работ, отзывами и быстрой записью.</p>
+          <div class="case-tags"><span>Mobile First</span><span>Vanilla JS</span><span>0 ₽ хостинг</span></div>
+        </div>
+        <div class="card case-card reveal" data-case="2">
+          <div class="case-top"><span class="case-badge">B2B / Парсинг · 4 часа</span><span class="case-open">Смотреть кейс ↗</span></div>
+          <h3>Сбор базы поставщиков и групп</h3>
+          <p>Спарсили 4 200 активных сообществ по ключевым словам с контактами администраторов в таблицу.</p>
+          <div class="case-tags"><span>Python / JS</span><span>CSV / Excel</span><span>Фильтрация</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="case-modal" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-head">
+        <span class="case-badge" id="modal-badge">Кейс</span>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Закрыть">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-mockup" id="modal-mockup"></div>
+      <div class="modal-details" id="modal-details"></div>
+      <div class="modal-foot">
+        <button type="button" class="btn-primary full-width" id="modal-order-btn">Заказать похожий проект</button>
+      </div>
+    </div>
+  </div>
+  <section class="section section-alt" id="workflow">
+    <div class="container">
+      <h2 class="section-title reveal">Этапы работы</h2>
+      <div class="workflow-grid">
+        <div class="workflow-card active reveal" data-step="0">
+          <div class="step-head"><span class="step-num">01</span><span class="step-hint">Пример →</span></div>
+          <h3>Заявка и задача</h3>
+          <p>Вы описываете задачу или отправляете ссылку на вашу группу ВКонтакте.</p>
+        </div>
+        <div class="workflow-card reveal" data-step="1">
+          <div class="step-head"><span class="step-num">02</span><span class="step-hint">Пример →</span></div>
+          <h3>Бесплатный прототип</h3>
+          <p>За 1 день собираю рабочий макет именно под ваш бизнес без предоплаты.</p>
+        </div>
+        <div class="workflow-card reveal" data-step="2">
+          <div class="step-head"><span class="step-num">03</span><span class="step-hint">Пример →</span></div>
+          <h3>Правки и подключение</h3>
+          <p>Корректируем цены и тексты, подключаем отправку заявок вам в ВК, MAX или на почту.</p>
+        </div>
+        <div class="workflow-card reveal" data-step="3">
+          <div class="step-head"><span class="step-num">04</span><span class="step-hint">Пример →</span></div>
+          <h3>Запуск и оплата</h3>
+          <p>Вы проверяете готовый сайт в сети и только после этого оплачиваете работу.</p>
+        </div>
+      </div>
+
+      <div class="workflow-preview reveal" id="workflow-preview">
+        <div class="preview-header">
+          <span class="preview-badge" id="preview-badge">Этап 01 · Входящее сообщение</span>
+          <span class="preview-meta" id="preview-meta">Время: ~5 минут</span>
+        </div>
+        <div class="preview-body" id="preview-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title reveal">Частые вопросы</h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Нужно ли платить каждый месяц за работу сайта?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Нет, ежемесячной абонентской платы нет. Сайт размещается на бесплатном облачном хостинге. По желанию оплачивается только личный домен в зоне .ru (около 200 ₽ в год).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Куда будут приходить заявки с сайта?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Заявки приходят в личные сообщения ВКонтакте, мессенджер MAX или на вашу электронную почту — настраиваем удобный для вас канал.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Что если мне не понравится первый макет?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Вы ничего не платите. Разработка первого прототипа бесплатна — оплата производится только если макет вас полностью устраивает.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Смогу ли я потом поменять цены в прайсе?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Да, в течение 30 дней после запуска мелкие правки бесплатны. Также я передам простую инструкцию, как менять цены и тексты самостоятельно.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <h2>Получите бесплатный прототип уже завтра</h2>
+        <p>Оставьте заявку — обсудим задачу, и через <strong>1 день</strong> вы увидите рабочий макет будущего сайта.</p>
+        <div class="contact-meta">
+          <div class="meta-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Срок разработки: <strong>от 1 дня</strong></span>
+          </div>
+          <div class="meta-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Оплата: <strong>после проверки сайта</strong></span>
+          </div>
+        </div>
+        <a href="https://vk.com" target="_blank" rel="noopener" class="btn-vk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>Написать в ВКонтакте</span>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="order-form">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="Новая заявка с сайта webcraft21.ru">
+        <input type="checkbox" name="botcheck" style="display: none;">
+
+        <div class="form-group">
+          <label for="user-name">Ваше имя *</label>
+          <input type="text" id="user-name" name="name" placeholder="Как к вам обращаться?" required>
+        </div>
+
+        <div class="form-group">
+          <label for="user-contact">Контакт для связи (ссылка ВК, MAX или телефон) *</label>
+          <input type="text" id="user-contact" name="contact" placeholder="://vk.com... или +7 (999) 000-00-00" required>
+        </div>
+
+        <div class="form-group">
+          <label>Выбор услуги</label>
+          <div class="custom-select" id="custom-select">
+            <input type="hidden" id="service-select" name="service" value="Сайт-визитка">
+            <button type="button" class="select-trigger" aria-expanded="false">
+              <span class="select-value">Сайт-визитка (3 500 ₽)</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="select-options">
+              <li class="select-option active" data-value="Сайт-визитка">Сайт-визитка (3 500 ₽)</li>
+              <li class="select-option" data-value="Сайт + заявки в ВК/MAX">Сайт + заявки в ВК/MAX (4 000 ₽)</li>
+              <li class="select-option" data-value="Парсер базы">Парсер базы клиентов (1 500 ₽)</li>
+              <li class="select-option" data-value="Индивидуальный расчёт">Индивидуальный набор (из калькулятора)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="user-comment">Комментарий к задаче</label>
+          <textarea id="user-comment" name="message" rows="3" placeholder="Опишите задачу или вставьте ссылку на группу ВК..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary full-width" id="submit-btn">Получить бесплатный прототип</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 webcraft21.ru — Разработка сайтов и парсеров под ключ.</p>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
